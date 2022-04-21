@@ -1,0 +1,61 @@
+<div class="table-responsive " >
+    <div class="form-group row margin">
+        <label for="firstName" class="col-sm-2 col-form-label" style="text-align: right;">Search</label>
+        <div class="col-sm-3">
+            <input type="text" [(ngModel)]="searchValue" class="form-control" id="search" />
+        </div>
+        <label for="pagination" class="col-sm-2 col-form-label" style="text-align: right;">Select no. of elements</label>
+        <div class="col-sm-4">
+            
+            <select  class="form-control" type="reset" id="search" (change)="chooseValue($event)">
+                <option value="0">--Select elements--</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                </select>
+        </div>
+    </div>
+
+  
+    <table class="table mt-3 table-striped table-bordered table-hover shadow" >
+        <thead class="thead-dark">
+            <tr>
+                <th class="col-2" (click)="sort('id')">EmployeeID &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+                <th class="col-2" (click)="sort('firstName')">Firstname &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+                <th class="col-2" (click)="sort('lastName')">Lastname &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+                <th class="col-2" (click)="sort('dob')">Dob &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+                <th class="col-2" (click)="sort('department')">Department &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+                <th class="col-2" (click)="sort('salary')">Salary &nbsp;<i class="fa fa-fw fa-sort"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of employeeData |
+             orderBy: key: reverse |
+              searchFilter:searchValue |
+              paginate:{itemsPerPage: pageSize, currentPage:p};">
+
+                <td class="col-2">{{row.id}}</td>
+                <td class="col-2">{{row.firstName}}</td>
+                <td class="col-2">{{row.lastName}}</td>
+                <td class="col-2">{{row.dob}}</td>
+                <td class="col-2">{{row.department}}</td>
+                <td class="col-2">{{row.salary}}</td>
+                <td class="col-2">
+                   
+                    <button class="btn btn-danger mx-3" (click)="deleteEmployee(row)">Delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+        <!-- <div class="border"> -->
+        </table>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <!-- </div> -->
+    
+</div>

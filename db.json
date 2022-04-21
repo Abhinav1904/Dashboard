@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Abhinav",
+      "lastName": "Gupta",
+      "dob": "1998-04-19",
+      "department": "Ase",
+      "salary": "40000"
+    },
+    {
+      "id": 2,
+      "firstName": "Abhijay",
+      "lastName": "Sharma",
+      "dob": "1999-10-04",
+      "department": "SDE",
+      "salary": "30000"
+    },
+    {
+      "id": 3,
+      "firstName": "Abhishek",
+      "lastName": "Gupta",
+      "dob": "1999-11-18",
+      "department": "Ase",
+      "salary": "50000"
+    },
+    {
+      "id": 4,
+      "firstName": "Rahul",
+      "lastName": "singh",
+      "dob": "1992-07-11",
+      "department": "SDE",
+      "salary": "65000"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "dob": "",
+      "department": "Ase",
+      "salary": 0
+    },
+    {
+      "id": 2,
+      "firstName": "",
+      "lastName": "",
+      "dob": "",
+      "department": "SDE",
+      "salary": 0
+    },
+    {
+      "id": 3,
+      "firstName": "",
+      "lastName": "",
+      "dob": "",
+      "department": "Teacher",
+      "salary": 0
+    }
+  ],
+  "users": [
+    {
+      "firstName": "abhi",
+      "lastName": "gupta",
+      "email": "abhi@gmail.com",
+      "password": "abhi1904",
+      "id": 1
+    },
+    {
+      "firstName": "abhinav",
+      "lastName": "gupta",
+      "email": "abhinav@gmail.com",
+      "password": "abhi1904",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

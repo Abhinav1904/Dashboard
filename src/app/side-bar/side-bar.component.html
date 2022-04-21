@@ -1,0 +1,31 @@
+<!-- <router-outlet></router-outlet> -->
+<ng-sidebar-container >
+
+    <ng-sidebar [(opened)]="opened" [mode]="'push'">
+
+        <h3 class="primary-color-custom container">MENU</h3>
+        <div class="menu">
+            
+
+            
+                <button type="button" class="btn btn-custom" routerLinkActive="active" 
+                   routerLink="/welcome">Home</button>
+            
+            
+                <button type="button" class="btn btn-custom mt-3" routerLinkActive="active"
+                    routerLink="/add-employee">Add Employee</button> 
+            
+                <button type="button" class="btn btn-custom mt-3" routerLinkActive="active"
+                    routerLink="/employee-list">Employee List</button> 
+
+                <button type="button" class="btn btn-custom mt-3" routerLinkActive="active"
+                    routerLink="/add-department">Add Department</button> 
+ 
+                <button type="button" class="btn btn-custom mt-3" routerLinkActive="active"
+                    routerLink="/department-list">Department List</button>
+                
+            </div>
+        
+    </ng-sidebar>
+
+</ng-sidebar-container>

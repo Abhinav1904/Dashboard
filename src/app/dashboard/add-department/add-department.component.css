@@ -1,0 +1,13 @@
+.container{
+  position: relative;
+ }
+ .form{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+ }
+ .shadow {
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}

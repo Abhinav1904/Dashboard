@@ -1,0 +1,14 @@
+.container{
+  position: relative;
+ }
+ .form{
+   margin: auto;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+ }
+ .shadow {
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}

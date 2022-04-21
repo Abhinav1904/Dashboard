@@ -1,0 +1,45 @@
+ng-sidebar-container{
+    height: 100vh;
+}
+
+::ng-deep .ng-sidebar{
+    /* background-color:rgb(14 64 105 / 84%); */
+    background-color:rgb(35 36 41);
+    width: 300px;
+    padding: 2em 3em;
+    text-align: left;
+    /* box-shadow: 0 0 2.5em rgb(85,85, 85, 0.5); */
+}
+
+.menu{
+    margin-top: 100px;
+    display: block;
+}
+
+.menu {
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu button {
+    margin-top: 500;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.menu .btn-custom {
+    border: 0px solid blue; 
+    color: azure;
+    outline: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+.primary-color-custom {
+    color: azure;
+}
+
+

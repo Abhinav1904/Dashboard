@@ -1,0 +1,59 @@
+<div class="row container form">
+
+  <div class="col-6 m-auto p-2 bd-highlight">
+    <div class="card m-auto shadow">
+      <div class="card-header ">
+        Add Employee
+      </div>
+      <div class="card-body ">
+        <form [formGroup]="formvalue" #loginForm = 'ngForm'>
+          <div class="form-group col-12 form-inline ">
+            <label for="firstName" class="form-label">FirstName</label>
+            <input type="text" class="form-control" formControlName="firstName" required>
+            
+
+          </div>
+
+          <div class="form-group col-12">
+            <label for="lasttName" class="form-label">LastName</label>
+            <input type="text" class="form-control" formControlName="lastName" required>
+
+          </div>
+
+          <div class="form-group col-12">
+            <label for="email" class="form-label">DOB</label>
+            <input type="date" class="form-control" formControlName="dob" required>
+
+
+          </div>
+          <div class="form-group col-12">
+            <label for="passwrod" class="form-label">Department</label>
+
+
+            <select  class="form-control" formControlName="department" type="reset">
+              <option value="-1">--Select department--</option>
+              <option *ngFor="let row of employeeData">{{row.department}}</option>
+              </select>
+
+          </div>
+
+
+
+          <div class="form-group col-12">
+            <label for="cpasswrod" class="form-label">Salary</label>
+            <input type="text" class="form-control" formControlName="salary" required>
+
+          </div>
+
+          <br>
+          <div class="form-group col-12 ">
+            <button [disabled] = "!loginForm.valid" type="reset" class="btn btn-success " (click)="postEmployeeDetails()">Submit</button>
+            <button type="submit" class="btn btn-primary mx-3">Reset</button>
+            <br><br>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

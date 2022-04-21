@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-blue bg-dark fixed-top">
+    <a class="navbar-brand mx-3 secondary-color-custom" routerLink="login">Sendinblue</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav ms-auto">  
+          <li *ngIf="!loggedIn()" class="nav-item">
+            <a class="nav-link secondary-color-custom" routerLink="login" routerLinkActive="active">Login</a>
+          </li>
+          <li *ngIf="!loggedIn()" class="nav-item">
+            <a class="nav-link secondary-color-custom" routerLink="register" routerLinkActive="active">Register</a>
+          </li>
+          <li *ngIf="loggedIn()" class="nav-item">
+            <a class="nav-link secondary-color-custom" (click) = "onLogout()" >Logout</a>
+        </li>
+        </ul>
+      </div>
+      
+</nav>

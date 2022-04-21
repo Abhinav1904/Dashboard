@@ -1,0 +1,14 @@
+.shadow {
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+.margin{
+  margin-top: 70px;
+  margin-right: 0px;
+}
+.ss{
+  margin-right: 2000px;
+}
+.border{
+  border: 2px solid green;
+}
